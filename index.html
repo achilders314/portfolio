@@ -3,48 +3,48 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alison Childers, Entry Level Developer</title>
+    <title>Alison Childers, Developer and Educator</title>
+	<link rel="shortcut icon" href="headshot.jpg" type="image/jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
   	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;600&family=Kelly+Slab&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;600&family=Kelly+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/styles.css">
     <script src="https://kit.fontawesome.com/630570cdd8.js" crossorigin="anonymous"></script>
   </head>
     <body>
+      <header>
+        <a class="hamburger" href="#navbar" aria-label="open main menu">
+          <span class="sr-only">Open Main Menu</span>
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </a>
+      <h1>Alison Childers</h1>
+      <h2>Developer and Educator</h2>
+      <nav id="navbar">
+          <ul class="nav">
+              <li><a href="/index.html" aria-label="Home" aria-hidden="true"><i class="fa-solid fa-house" width="2%"></i> Home</a></li>
+              <li><a href="/bio.html" aria-label="User Icon" aria-hidden="true"><i class="fa-solid fa-circle-user"></i> About Me</a></li>
+              <li class="dropdown"><a href="/projects.html" aria-label="Laptop" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i> Portfolio <i class="fas fa-caret-down" aria-hidden="true"></i></a>
+                <ul class="dropdown-menu">
+                   <li><a href="/project1/rocketman.html" target="_blank">Project #1: Rocketman Website</a></li>
+                   <li><a href="/project2/coffee_mimic.html" target="_blank">Project #2: Coffee Mimic</a></li>
+                   <li><a href="/recipebootstrap/recipecentral.html">Project #3: Recipe Website</a></li>
+                </ul>
+              </li>
+              <li><a href="#footer"aria-label="globe"><i class="fa-solid fa-globe" aria-hidden="true"></i> Contact</a></li>
+          </ul>
+          <a class="close" href="#" aria-label="close main menu">
+            <span class="sr-only">Close Main Menu</span>
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </a>
+      </nav>
+    </header>
     <main>
-	<header>
-    <a class="hamburger" href="#navbar" aria-label="open main menu">
-      <span class="sr-only">Open Main Menu</span>
-      <i class="fa-solid fa-bars" aria-hidden="true"></i>
-    </a>
-
-  <nav id="navbar">
-      <ul class="nav">
-          <li><a href="/index.html" aria-label="Home" aria-hidden="true"><i class="fa-solid fa-house" width="2%"></i> Home</a></li>
-          <li><a href="/bio.html" aria-label="User Icon" aria-hidden="true"><i class="fa-solid fa-circle-user"></i> About Me</a></li>
-          <li class="dropdown"><a href="/projects.html" aria-label="Laptop" aria-hidden="true"><i class="fa-solid fa-laptop-code"></i> Portfolio <i class="fas fa-caret-down" aria-hidden="true"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="">Project #1: _____</a></li>
-              <li><a href="">Project #2: _____</a></li>
-              <li><a href="">Project #3: _____</a></li>
-            </ul>
-          </li>
-          <li><a href="#footer"aria-label="globe"><i class="fa-solid fa-globe" aria-hidden="true"></i> Contact</a></li>
-      </ul>
-      <a class="close" href="#" aria-label="close main menu">
-        <span class="sr-only">Close Main Menu</span>
-        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
-      </a>
-  </nav>
-</header>
-
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
       <header class="project-item">
         <div class="content-wrap">
-         <h1>Alison Childers</h1>
-         <h2>Entry Level Developer</h2>
+          <img class="headshot" src="headshot.jpg" alt="A headshot of Alison Childers">
+          <h2>Welcome</h2>
 
-         <img src="/headshot.jpg" alt="mom and son">
          <div class="profile-display">
          <p>I'm an entry level developer looking to land my first development job. Being a former teacher, I may have an unusual skillset, 
          but I have many transferable skills. I have already worked with HTML, CSS, and Java either in college or learning coding on my own.  
@@ -52,8 +52,8 @@
          <p>But even more than my coding skill, I am a lifelong learner who's always hungry to learn more. Having a math mind, I'm used to persevering
          with puzzles, and coding is just a giant puzzle.  I love working in a collaborative environment and know I would be an asset to any
           team. </p> 
-         <p class="profile">Access my resume <a class="btn" href="/AlisonChildersResume2022.pdf">here</a></p>
-          <p class="profile">Access my transcripts <a class="btn" href="/Transcripts.pdf">here</a></p>
+         <p class="profile">Access my resume <a class="btn" href="/AlisonChildersResume2022.pdf" target="_blank">here</a></p>
+          <p class="profile">Access my transcripts <a class="btn" href="/Transcripts.pdf" target="_blank">here</a></p>
           </div>
         </div>
       </header>
@@ -67,10 +67,10 @@
         <!-- Copy the whole <section> block to add more projects. -->
         <section class="project-item">
           <ul>
-            <li>JavaScript (Currently working on LinkedIn Learning JS Course & Full Stack Bootcamp)</li>
+            <li>JavaScript <i>(Currently working on LinkedIn Learning JS Course & Full Stack Bootcamp)</i></li>
             <li>React</li>
             <li>Udemy Full Stack Web Development Bootcamp</li>
-		   </ul>
+		      </ul>
          
         </section>
         <!-- End of Project block. -->
@@ -78,12 +78,6 @@
      </section>
 
      <!--*********************** Current Portfolio / Projects *******************************-->
-     <section class="portfolio">
-      <div class="content-wrap">
-        <h2>Portfolio Projects</h2>  
-        <p>I will add projects as I complete them here for my bootcamp!</p>
-      </div>
-     </section>
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
       <section class="education"> 
@@ -91,35 +85,35 @@
             <h2>Education/Courses</h2>
             <!-- Copy this whole <section> block to add more schools. -->
             <section class="education-courses">
-              <br><h3>Southern Illinois University Carbondale</h3>
+              <h3>Southern Illinois University Carbondale</h3>
               <p>Mathematics, 2008-2011</p>
               <p>3.64 GPA</p>
               <p>Included CS202, a Java class</p>
             </section>
             <!-- End of School block. -->
             <section class="education-courses">
-              <br><h3>Udemy</h3>
-              <p>Full Stack Web Development Bootcamp, In Progress</p>
-              <p>Includes courses and projects over:
-                  <ul>
-                      <li>HTML</li>
-                      <li>CSS</li>
-                      <li>JavaScript</li>
-                      <li>Bootstrap</li>
-                      <li>jQuery</li>
-                      <li>React</li>
-                      <li>APIs</li>
-                      <li>Git</li>
-                      <li>Python</li>
-                      <li>SQL</li>
-                      <li>Django</li>
-                      <li>Tips on becoming a developer</li>
+              <h3>Udemy</h3>
+			<p>Full Stack Web Development Bootcamp, 40% Complete</p>
+          	<p>Includes courses and projects over :
+              <ul>
+                  <li>HTML ✓</li>
+                  <li>CSS ✓</li>
+                  <li>JavaScript ✓</li>
+                  <li>Bootstrap (current)</li>
+                  <li>jQuery</li>
+                  <li>React</li>
+                  <li>APIs</li>
+                  <li>Git</li>
+                  <li>Python</li>
+                  <li>SQL</li>
+                  <li>Django</li>
+                  <li>Tips on getting a developer job</li>
                   </ul>
               </p>
             </section>
           </div>
          </section>
-        
+        </main>
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer><a id="footer"></a>
         <div class="content-wrap">
@@ -127,14 +121,13 @@
 
         <!-- Social media and contact links. Add or remove any networks. -->
           <ul class="contact-list">
-            <li><a href="mailto:alisonchilders314@gmail.com">alisonchilders314@gmail.com</a></li>
-            <li><a href="https://www.linkedin.com/in/alison_childers_b36b68234" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:alisonchilders314&#64;gmail.com" target="_blank"><backward>moc.liamg&#64;413sredlihcnosila</backward></a></li>
+            <li><a href="https://www.linkedin.com/in/alison-childers-b36b68234/" target="_blank">LinkedIn</a></li>
             <li><a href="https://www.facebook.com/alisonchilders3.14" target="_blank">Facebook</a></li>
 			<li><a href="https://www.github.com/achilders314" target="_blank">GitHub</a></li>
 			<li><a href="https://www.codepen.io/collection/vBgeQy" target="_blank">Codepen</a></li>
         </ul>
         </div>
       </footer>
-    </main>
   </body>
 </html>
